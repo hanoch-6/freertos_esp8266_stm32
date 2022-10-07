@@ -107,7 +107,7 @@ void MX_FREERTOS_Init(void)
 
   /* Create the thread(s) */
   /* definition and creation of debug_usart_tas */
-  osThreadDef(Task50MSThread, Task_50ms, osPriorityIdle, 0, 128);
+  osThreadDef(Task50MSThread, idle_50ms, osPriorityIdle, 0, 128);
   osThreadCreate(osThread(Task50MSThread), NULL);
 
   /* USER CODE BEGIN RTOS_THREADS */
@@ -124,13 +124,14 @@ void MX_FREERTOS_Init(void)
  * @retval None
  */
 /* USER CODE END Header_StartDefaultTask */
-void Task_50ms(void const *argument)
+void idle_50ms(void const *argument)
 {
   /* USER CODE BEGIN StartDefaultTask */
   /* Infinite loop */
   for (;;)
   {
     osDelay(50);
+    feed_dog();
     // printf("co")
   }
   /* USER CODE END StartDefaultTask */
@@ -143,7 +144,7 @@ void addtask(void const *argument)
 
     printf("sheeat = %d", count);
     count++;
-    HAL_Delay(2000);
+    osDelay(2000);
   }
 }
 
