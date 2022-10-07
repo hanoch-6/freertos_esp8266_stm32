@@ -28,10 +28,20 @@ Project File Date:  10/07/2022
 *** Using Compiler 'V5.06 update 4 (build 422)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
 Build target 'ESP8266_wifi_connect'
 compiling main.c...
+compiling UserTask.c...
+../Core/Inc/HardwareConfig.h(18): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Core/Inc/UserTask.h(10): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\Core\Src\UserTask.c(150): warning:  #177-D: function "led_control"  was declared but never referenced
+  static void led_control(void)
+..\Core\Src\UserTask.c(167): warning:  #177-D: function "feed_dog"  was declared but never referenced
+  static void feed_dog(void)
+..\Core\Src\UserTask.c: 4 warnings, 0 errors
 linking...
-Program Size: Code=9116 RO-data=444 RW-data=128 ZI-data=5144  
+Program Size: Code=9084 RO-data=444 RW-data=128 ZI-data=5152  
 FromELF: creating hex file...
-"ESP8266_wifi_connect\ESP8266_wifi_connect.axf" - 0 Error(s), 0 Warning(s).
+"ESP8266_wifi_connect\ESP8266_wifi_connect.axf" - 0 Error(s), 4 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -50,7 +60,7 @@ Package Vendor: ARM
 
    * Component: ARM::CMSIS:CORE:5.6.0
       Include file:  CMSIS\Core\Include\tz_context.h
-Build Time Elapsed:  00:00:02
+Build Time Elapsed:  00:00:03
 </pre>
 </body>
 </html>

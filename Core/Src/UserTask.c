@@ -23,7 +23,7 @@
 #include "main.h"
 #include "cmsis_os.h"
 #include "stdio.h"
-#include "Config.h"
+#include "UserTask.h"
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 
@@ -54,8 +54,10 @@ osThreadId add_count;
 /* USER CODE BEGIN FunctionPrototypes */
 
 /* USER CODE END FunctionPrototypes */
+static void led_control(void);
+static void feed_dog(void);
 
-void StartDefaultTask(void const *argument);
+void Task_50ms(void const *argument);
 void addtask(void const *argument);
 
 void MX_FREERTOS_Init(void); /* (MISRA C 2004 rule 8.1) */
@@ -129,6 +131,7 @@ void Task_50ms(void const *argument)
   for (;;)
   {
     osDelay(50);
+    // printf("co")
   }
   /* USER CODE END StartDefaultTask */
 }
@@ -168,7 +171,7 @@ static void feed_dog(void)
   if(2==step)
   {
     step=0;
-    HAL_IWDG_Refresh(&hiwdg)
+    HAL_IWDG_Refresh(&hiwdg);
   }
 }
 /* Private application code --------------------------------------------------*/

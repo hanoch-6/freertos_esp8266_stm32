@@ -43,6 +43,4 @@ esp8266_wifi_connect\main.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/
 esp8266_wifi_connect\main.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h
 esp8266_wifi_connect\main.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h
 esp8266_wifi_connect\main.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h
-esp8266_wifi_connect\main.o: ../Core/Inc/iwdg.h
-esp8266_wifi_connect\main.o: ../Core/Inc/usart.h
-esp8266_wifi_connect\main.o: ../Core/Inc/gpio.h
+esp8266_wifi_connect\main.o: ../Core/Inc/SystemConfig.h

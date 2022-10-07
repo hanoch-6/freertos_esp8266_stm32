@@ -5,6 +5,7 @@
         "gpio.h": "c",
         "config.h": "c",
         "freertos.h": "c",
-        "iwdg.h": "c"
+        "iwdg.h": "c",
+        "systemconfig.h": "c"
     }
 }
