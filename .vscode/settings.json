@@ -6,6 +6,10 @@
         "config.h": "c",
         "freertos.h": "c",
         "iwdg.h": "c",
-        "systemconfig.h": "c"
+        "systemconfig.h": "c",
+        "usartdriver.h": "c",
+        "loopqueue.h": "c",
+        "hardwareconfig.h": "c",
+        "usertask.h": "c"
     }
 }

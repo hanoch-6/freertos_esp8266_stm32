@@ -3,9 +3,9 @@
 <pre>
 <h1>µVision Build Log</h1>
 <h2>Tool Versions:</h2>
-IDE-Version: ¦ÌVision V5.23.0.0
+IDE-Version: ÂµVision V5.23.0.0
 Copyright (C) 2017 ARM Ltd and ARM Germany GmbH. All rights reserved.
-License Information: hanoch Thomas, JXW, LIC=HF82M-XUPEY-17XRR-K6J3H-4KUDQ-JIB0Z
+License Information: hanoch Thoams, jinxin, LIC=CRMW3-AY21N-BXJUY-ICB03-8TH5W-3532R
  
 Tool Versions:
 Toolchain:       MDK-ARM Professional  Version: 5.23
@@ -21,7 +21,7 @@ Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V2.0.18.0
 Dialog DLL:      TCM.DLL V1.27.0.0
  
 <h2>Project:</h2>
-C:\Users\hanoch\Documents\Sync doc\stm32_study\ESP8266_wifi_connect\MDK-ARM\ESP8266_wifi_connect.uvprojx
+C:\VMShare\share\Sync doc\stm32_study\ESP8266_wifi_connect\MDK-ARM\ESP8266_wifi_connect.uvprojx
 Project File Date:  10/07/2022
 
 <h2>Output:</h2>
@@ -30,34 +30,39 @@ Build target 'ESP8266_wifi_connect'
 compiling UserTask.c...
 ../Core/Inc/HardwareConfig.h(18): warning:  #1-D: last line of file ends without a newline
   #endif
-../Core/Inc/UserTask.h(10): warning:  #1-D: last line of file ends without a newline
+../Core/Inc/LoopQueue.h(25): warning:  #1-D: last line of file ends without a newline
   #endif
-..\Core\Src\UserTask.c(151): warning:  #177-D: function "led_control"  was declared but never referenced
+../Core/Inc/UsartDriver.h(31): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Core/Inc/UserTask.h(16): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\Core\Src\UserTask.c(168): warning:  #550-D: variable "data"  was set but never used
+  	char data = 0;
+..\Core\Src\UserTask.c(196): warning:  #177-D: function "led_control"  was declared but never referenced
   static void led_control(void)
-..\Core\Src\UserTask.c: 3 warnings, 0 errors
+..\Core\Src\UserTask.c: 6 warnings, 0 errors
 linking...
-Program Size: Code=9232 RO-data=444 RW-data=132 ZI-data=5156  
+Program Size: Code=10968 RO-data=492 RW-data=140 ZI-data=5748  
 FromELF: creating hex file...
-"ESP8266_wifi_connect\ESP8266_wifi_connect.axf" - 0 Error(s), 3 Warning(s).
+"ESP8266_wifi_connect\ESP8266_wifi_connect.axf" - 0 Error(s), 6 Warning(s).
 
 <h2>Software Packages used:</h2>
 
 Package Vendor: ARM
-                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
-                ARM::CMSIS:CORE:5.6.0
-                CMSIS (Common Microcontroller Software Interface Standard)
-   * Component: CORE Version: 5.6.0
+                http://www.keil.com/pack/ARM.CMSIS.5.0.1.pack
+                ARM::CMSIS:CORE:5.0.1
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.0.1
 
 <h2>Collection of Component include folders:</h2>
   .\RTE\_ESP8266_wifi_connect
-  C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.9.0\CMSIS\Core\Include
-  C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.4.0\Device\Include
+  C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include
+  C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include
 
 <h2>Collection of Component Files used:</h2>
 
-   * Component: ARM::CMSIS:CORE:5.6.0
-      Include file:  CMSIS\Core\Include\tz_context.h
-Build Time Elapsed:  00:00:02
+   * Component: ARM::CMSIS:CORE:5.0.1
+Build Time Elapsed:  00:00:01
 </pre>
 </body>
 </html>

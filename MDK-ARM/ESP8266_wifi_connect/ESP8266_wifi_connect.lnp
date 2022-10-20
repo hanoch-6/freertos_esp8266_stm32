@@ -7,6 +7,8 @@
 "esp8266_wifi_connect\stm32f1xx_hal_timebase_tim.o"
 "esp8266_wifi_connect\usertask.o"
 "esp8266_wifi_connect\systemconfig.o"
+"esp8266_wifi_connect\loopqueue.o"
+"esp8266_wifi_connect\usartdriver.o"
 "esp8266_wifi_connect\stm32f1xx_hal_gpio_ex.o"
 "esp8266_wifi_connect\stm32f1xx_hal.o"
 "esp8266_wifi_connect\stm32f1xx_hal_rcc.o"

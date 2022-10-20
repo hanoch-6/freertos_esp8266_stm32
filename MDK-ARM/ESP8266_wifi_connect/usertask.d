@@ -47,3 +47,5 @@ esp8266_wifi_connect\usertask.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 esp8266_wifi_connect\usertask.o: ../Core/Inc/UserTask.h
 esp8266_wifi_connect\usertask.o: ../Core/Inc/HardwareConfig.h
 esp8266_wifi_connect\usertask.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h
+esp8266_wifi_connect\usertask.o: ../Core/Inc/UsartDriver.h
+esp8266_wifi_connect\usertask.o: ../Core/Inc/LoopQueue.h
